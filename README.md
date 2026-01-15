@@ -56,11 +56,11 @@ açık biçimde gözlemlenebilir.
 
 Modelin nicel performansı ve sınıf bazlı davranışı aşağıdaki görseller ile özetlenmiştir.
 
-#### 📊 Precision–Recall Eğrisi
+#### 📊 Precision Eğrisi
 
-![Precision Recall Curve](Head_Detection/third_stage/B_v8n_finetune_img896_ep30_bs2_AdamW_lr0022/BoxPR_curve.png)
+![Precision Curve](Head_Detection/third_stage/B_v8n_finetune_img896_ep30_bs2_AdamW_lr0022/BoxP_curve.png)
 
-Bu eğri, modelin farklı confidence eşiklerinde precision–recall dengesini göstermektedir ve nesne tespit literatüründe standart bir değerlendirme aracıdır.
+Bu eğri, modelin farklı confidence eşiklerinde **Precision** davranışını göstermektedir. Özellikle **false positive** kontrolü açısından hangi eşik aralıklarında daha güvenilir çalıştığını görselleştirir.
 
 ---
 
