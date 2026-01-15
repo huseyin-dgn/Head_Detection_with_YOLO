@@ -40,38 +40,39 @@ Head_Detection/
 
 Aşağıdaki görsel, modelin head detection performansını ve sayım davranışını özetlemektedir:
 
-```text
-third_stage/result.png
-```
+![Head Detection Result](Head_Detection/third_stage/B_v8n_finetune_img896_ep30_bs2_AdamW_lr0022/BoxPR_curve.png)
 
 Bu görselde:
 
-* Tespit edilen kafalar
-* Conf ve IoU eşiklerine göre dağılım
-* Görsel doğrulama (qualitative evaluation)
+* Precision–Recall dengesi
+* Farklı eşik değerlerinde model davranışı
+* Genel tespit kalitesi
 
 açık biçimde gözlemlenebilir.
 
 ---
 
-### 🔹 Model ve Değerlendirme Logları
+### 🔹 Nicel Metrikler ve Karışıklık Matrisi
 
-Model eğitimi ve değerlendirme sürecinde üretilen log dosyaları yine aynı klasörde yer almaktadır:
+Modelin nicel performansı ve sınıf bazlı davranışı aşağıdaki görseller ile özetlenmiştir.
 
-```text
-third_stage/
-├── train.log
-├── eval.log
-├── metrics.log
-```
+#### 📊 Precision–Recall Eğrisi
 
-Bu loglar üzerinden:
+![Precision Recall Curve](Head_Detection/third_stage/B_v8n_finetune_img896_ep30_bs2_AdamW_lr0022/BoxPR_curve.png)
 
-* Epoch bazlı kayıp (loss) değişimleri
-* Precision / Recall / mAP trendleri
-* Sayım bazlı hata metrikleri (MAE, RMSE vb.)
+Bu eğri, modelin farklı confidence eşiklerinde precision–recall dengesini göstermektedir ve nesne tespit literatüründe standart bir değerlendirme aracıdır.
 
-izlenebilir ve deneyler **tekrar üretilebilir** hale gelir.
+---
+
+#### 🧩 Normalize Confusion Matrix
+
+![Normalized Confusion Matrix](Head_Detection/third_stage/B_v8n_finetune_img896_ep30_bs2_AdamW_lr0022/confusion_matrix_normalized.png)
+
+Normalize edilmiş confusion matrix, sınıf dengesizliğinin etkisini azaltarak modelin gerçek tespit davranışını daha net biçimde ortaya koyar. Bu sunum biçimi özellikle akademik raporlamada tercih edilmektedir.
+
+---
+
+> Sayısal metrikler (mAP@0.5:0.95, Precision, Recall) Ultralytics tarafından üretilen `results.csv` dosyasından elde edilmiştir ve deneyin tekrar üretilebilirliğini garanti altına alır.
 
 ---
 
@@ -128,7 +129,7 @@ Bu proje özellikle:
 * Akıllı şehir uygulamaları
 * Yoğunluk analizi
 
-gibi senaryolara yönelik bir **başlangıç referansı** olarak tasarlanmıştır.
+gibi senaryolara yönelik bir **referans** olarak tasarlanmıştır.
 
 ---
 
