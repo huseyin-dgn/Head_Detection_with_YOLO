@@ -1,0 +1,14 @@
+key,value
+n_images,700
+raw_total,21598
+kept_total,18605
+removed_total,2993
+avg_raw_per_image,30.854285714285716
+avg_kept_per_image,26.57857142857143
+avg_removed_per_image,4.275714285714286
+nms_type,diou
+conf,0.39
+diou_thr,0.51
+nms_iou,0.5
+imgsz,832
+device,cuda:0

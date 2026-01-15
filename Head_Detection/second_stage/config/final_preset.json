@@ -1,0 +1,12 @@
+{
+  "name": "head_counting_final_diou",
+  "weights": "weights/best.pt",
+  "conf": 0.39,
+  "nms_type": "diou",
+  "diou_thr": 0.51,
+  "nms_iou": 0.50,
+  "imgsz": 832,
+  "device": "cuda:0",
+  "class_agnostic": true,
+  "max_det": 300
+}

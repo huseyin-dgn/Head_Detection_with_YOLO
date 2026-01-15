@@ -1,0 +1,27 @@
+dataset_yaml: "C:/Users/hdgn5/OneDrive/Masaüstü/Head Detection/scut_head_yolo_rebalanced/dataset.yaml"
+model: "yolov8s.pt"
+task: "detect"
+
+imgsz: 768
+epochs: 60
+batch: 8
+device: "cuda:0"
+workers: 4
+seed: 42
+
+project_dir: "outputs/runs"
+run_name: "baseline_y8s_768_adamw_lr25e-4"
+
+patience: 15
+save: true
+exist_ok: true
+pretrained: true
+amp: true
+
+optimizer: "AdamW"
+lr0: 0.0025
+lrf: 0.01
+weight_decay: 0.0005
+
+close_mosaic: 10
+cos_lr: true
