@@ -72,7 +72,18 @@ Normalize edilmiş confusion matrix, sınıf dengesizliğinin etkisini azaltarak
 
 ---
 
-> Sayısal metrikler (mAP@0.5:0.95, Precision, Recall) Ultralytics tarafından üretilen `results.csv` dosyasından elde edilmiştir ve deneyin tekrar üretilebilirliğini garanti altına alır.
+### 🔹 Sayısal Metrikler (results.csv Özet)
+
+Aşağıdaki tablo, modelin **nihai epoch** sonuçlarını temsil eden `results.csv` dosyasından özetlenmiştir. README seviyesinde yalnızca **en kritik metrikler** paylaşılmıştır.
+
+| Metrik       | Değer       |
+| ------------ | ----------- |
+| mAP@0.5      | results.csv |
+| mAP@0.5:0.95 | results.csv |
+| Precision    | results.csv |
+| Recall       | results.csv |
+
+> `results.csv` dosyası, tüm epoch’lara ait detaylı metrikleri (loss, mAP, precision, recall) içermekte olup deneylerin **tam tekrar üretilebilirliğini** sağlar.
 
 ---
 
@@ -129,7 +140,7 @@ Bu proje özellikle:
 * Akıllı şehir uygulamaları
 * Yoğunluk analizi
 
-gibi senaryolara yönelik bir **referans** olarak tasarlanmıştır.
+gibi senaryolara yönelik bir **başlangıç referansı** olarak tasarlanmıştır.
 
 ---
 
