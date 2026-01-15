@@ -40,13 +40,13 @@ Head_Detection/
 
 Aşağıdaki görsel, modelin head detection performansını ve sayım davranışını özetlemektedir:
 
-![Head Detection Result](Head_Detection/third_stage/B_v8n_finetune_img896_ep30_bs2_AdamW_lr0022/BoxPR_curve.png)
+![Head Detection Result](Head_Detection/third_stage/results.png)
 
 Bu görselde:
 
-* Precision–Recall dengesi
-* Farklı eşik değerlerinde model davranışı
-* Genel tespit kalitesi
+- Modelin nihai head detection çıktıları
+- Sahne bazlı kafa tespitleri ve sayım davranışı
+- Genel tespit doğruluğu ve görsel tutarlılık
 
 açık biçimde gözlemlenebilir.
 
