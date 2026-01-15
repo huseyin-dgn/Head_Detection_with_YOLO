@@ -87,6 +87,23 @@ Aşağıdaki tablo, modelin **nihai epoch** sonuçlarını temsil eden `results.
 
 ---
 
+## Kullanılan Veri Seti
+
+Bu çalışmada kullanılan veri seti, **YOLO formatına uygun olarak yeniden düzenlenmiş (rebalanced)** bir *head detection* veri kümesidir. Veri seti; farklı sahne tipleri, kamera açıları ve yoğunluk seviyelerini içerecek şekilde hazırlanmıştır.
+
+**Genel özellikler:**
+
+* Tek sınıf: `head`
+* YOLO annotation formatı (`.txt`)
+* Train / Validation ayrımı yapılmış yapı
+* Kalabalık ve seyrek sahneleri birlikte içeren örnekler
+
+Veri setine ait yol tanımları ve bölünmeler, deneylerin tekrar üretilebilir olması için `dataset.yaml` dosyası üzerinden yönetilmektedir.
+
+> Not: Veri seti yapısı ve sınıf tanımı değiştirilmeden farklı YOLO modelleriyle doğrudan yeniden eğitilebilir.
+
+---
+
 ## Kullanılan Teknolojiler
 
 * **Python 3.9+**
@@ -94,14 +111,6 @@ Aşağıdaki tablo, modelin **nihai epoch** sonuçlarını temsil eden `results.
 * PyTorch
 * NumPy / Pandas
 * OpenCV
-
----
-
-##
-
-```bash
-```
-
 ---
 
 ## Eğitim (Training)
