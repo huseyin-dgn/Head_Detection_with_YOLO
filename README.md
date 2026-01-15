@@ -89,8 +89,7 @@ Aşağıdaki tablo, modelin **nihai epoch** sonuçlarını temsil eden `results.
 
 ## Kullanılan Veri Seti
 
-Bu çalışmada kullanılan veri seti, **YOLO formatına uygun olarak yeniden düzenlenmiş (rebalanced)** bir *head detection* veri kümesidir. Veri seti; farklı sahne tipleri, kamera açıları ve yoğunluk seviyelerini içerecek şekilde hazırlanmıştır.
-
+Bu çalışma, SCUT-HEAD veri seti temel alınarak oluşturulmuş ve YOLO formatına uyarlanmış (rebalanced) bir head detection veri kümesi kullanılarak gerçekleştirilmiştir
 **Genel özellikler:**
 
 * Tek sınıf: `head`
